@@ -1,0 +1,34 @@
+SCRIPT INVENTARIO:
+
+USE BASEDINVENTARIO;
+
+INSERT INTO inventario (nombre, descripcion) VALUES 
+('Teclado Mecánico RGB', 'Teclado retroiluminado con switches azules y 104 teclas anti-ghosting'),
+('Mouse Inalámbrico Logitech', 'Mouse ergonómico con conexión Bluetooth y sensor óptico de alta precisión'),
+('Monitor LED 24"', 'Pantalla Full HD con tecnología antirreflejo y puerto HDMI'),
+('Audífonos Gamer HyperX', 'Audífonos con sonido envolvente 7.1 y micrófono con cancelación de ruido');
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+use basedpedidos;
+INSERT INTO pedidos (cliente, producto) VALUES 
+('Carlos Muñoz', 'Perfume Acqua di Gio 100ml'),
+('Fernanda Rivas', 'Crema Hidratante Nivea 250ml'),
+('Jorge Salas', 'Shampoo Dove Reconstrucción 400ml'),
+('María Torres', 'Jabón Líquido Lux Flor de Vainilla 500ml');
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+use basedpagos;
+
+INSERT INTO pagos (descripcion, monto)
+VALUES ('Compra de Audífonos Gamer HyperX', 45990);
+
+INSERT INTO pagos (descripcion, monto)
+VALUES ('Pago por Teclado Mecánico RGB', 75990);
+
+INSERT INTO pagos (descripcion, monto)
+VALUES ('Adquisición de Mouse Inalámbrico Logitech', 28990);
+
+INSERT INTO pagos (descripcion, monto)
+VALUES ('Compra de Monitor Curvo Samsung 27"', 189990);

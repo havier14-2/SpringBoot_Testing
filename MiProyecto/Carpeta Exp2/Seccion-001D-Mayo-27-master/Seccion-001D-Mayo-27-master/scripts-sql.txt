@@ -1,0 +1,62 @@
+--BASE DE DATOS PARA USUARIOS
+
+use basecliente;
+
+-- Tabla: clientes
+INSERT INTO cliente (id, nombre, apellido, email) VALUES
+(101, 'Carlos', 'Muñoz', 'carlos.munoz@example.com'),
+(102, 'Lucía', 'Pérez', 'lucia.perez@example.com'),
+(103, 'Javier', 'Rojas', 'javier.rojas@example.com'),
+(104, 'Fernanda', 'López', 'fernanda.lopez@example.com');
+
+-- Tabla: gerentes
+INSERT INTO gerente (id, nombre, apellido, email) VALUES
+(201, 'Paula', 'González', 'paula.gonzalez@example.com'),
+(202, 'Andrés', 'Salazar', 'andres.salazar@example.com'),
+(203, 'María', 'Contreras', 'maria.contreras@example.com'),
+(204, 'Rodrigo', 'Vega', 'rodrigo.vega@example.com');
+
+-- Tabla: administradores
+INSERT INTO administrador (id, nombre, apellido, email) VALUES
+(301, 'Elena', 'Navarro', 'elena.navarro@example.com'),
+(302, 'Tomás', 'Herrera', 'tomas.herrera@example.com'),
+(303, 'Camila', 'Castro', 'camila.castro@example.com'),
+(304, 'Francisco', 'Molina', 'francisco.molina@example.com');
+
+-- Tabla: encargados_ventas
+INSERT INTO encargado_ventas (id, nombre, apellido, email) VALUES
+(401, 'Natalia', 'Silva', 'natalia.silva@example.com'),
+(402, 'Diego', 'León', 'diego.leon@example.com'),
+(403, 'Valentina', 'Araya', 'valentina.araya@example.com'),
+(404, 'Matías', 'Fernández', 'matias.fernandez@example.com');
+
+-- Tabla: encargados_logistica
+INSERT INTO encargado_logistica (id, nombre, apellido, email) VALUES
+(501, 'Ignacio', 'Paredes', 'ignacio.paredes@example.com'),
+(502, 'Sofía', 'Carrasco', 'sofia.carrasco@example.com'),
+(503, 'Benjamín', 'Torres', 'benjamin.torres@example.com'),
+(504, 'Isidora', 'Fuentes', 'isidora.fuentes@example.com');
+
+
+
+--BASE DE DATOS PARA PRODUCTOS
+
+
+use basedproductos;
+
+INSERT INTO producto (id, nombre, descripcion, precio) VALUES (1, 'Lámpara de escritorio', 'Lámpara LED con brazo flexible', 14990);
+INSERT INTO producto (id, nombre, descripcion, precio) VALUES (2, 'Mochila deportiva', 'Mochila resistente al agua de 20 litros', 29990);
+INSERT INTO producto (id, nombre, descripcion, precio) VALUES (3, 'Set de cubiertos', 'Juego de cubiertos de acero inoxidable, 24 piezas', 19990);
+INSERT INTO producto (id, nombre, descripcion, precio) VALUES (4, 'Auriculares inalámbricos', 'Auriculares Bluetooth con cancelación de ruido', 49990);
+INSERT INTO producto (id, nombre, descripcion, precio) VALUES (5, 'Taza térmica', 'Taza de acero inoxidable para mantener la temperatura', 9990);
+
+
+
+--BASE DE DATOS PARA SUCURSALES
+
+
+use basedsucursales;
+
+INSERT INTO sucursal (id, nombre, direccion) VALUES (1, 'Sucursal Santiago', 'Av. Providencia 1234, Santiago');
+INSERT INTO sucursal (id, nombre, direccion) VALUES (2, 'Sucursal Viña del Mar', 'Calle Valparaíso 567, Viña del Mar');
+INSERT INTO sucursal (id, nombre, direccion) VALUES (3, 'Sucursal Concepción', 'O''Higgins 890, Concepción');

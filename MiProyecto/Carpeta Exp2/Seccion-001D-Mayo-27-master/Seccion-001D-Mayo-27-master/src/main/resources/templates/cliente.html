@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios del Sistema</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #2c2f33; /* Gris oscuro */
+            color: #f1f1f1;
+        }
+        h1, h2 {
+            color: #ffffff;
+        }
+        .table {
+            background-color: #3b3f44;
+            color: #ffffff;
+        }
+        .table th, .table td {
+            border-color: #6c757d;
+        }
+        .table-striped > tbody > tr:nth-of-type(odd) {
+            background-color: #2f3338;
+        }
+        .table-striped > tbody > tr:nth-of-type(even) {
+            background-color: #3b3f44;
+        }
+    </style>
+</head>
+<body class="p-4">
+    <div class="container">
+        <h1 class="text-center mb-4">Usuarios del Sistema</h1>
+
+        <!-- Clientes -->
+        <h2 class="text-primary">Clientes</h2>
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="cliente : ${clientes}">
+                    <td th:text="${cliente.id}"></td>
+                    <td th:text="${cliente.nombre}"></td>
+                    <td th:text="${cliente.apellido}"></td>
+                    <td th:text="${cliente.email}"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Gerentes -->
+        <h2 class="text-success">Gerentes</h2>
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="gerente : ${gerentes}">
+                    <td th:text="${gerente.id}"></td>
+                    <td th:text="${gerente.nombre}"></td>
+                    <td th:text="${gerente.apellido}"></td>
+                    <td th:text="${gerente.email}"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Administradores -->
+        <h2 class="text-danger">Administradores</h2>
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="admin : ${administrador}">
+                    <td th:text="${admin.id}"></td>
+                    <td th:text="${admin.nombre}"></td>
+                    <td th:text="${admin.apellido}"></td>
+                    <td th:text="${admin.email}"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Encargados de Ventas -->
+        <h2 class="text-warning">Encargados de Ventas</h2>
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="ventas : ${ventasas}">
+                    <td th:text="${ventas.id}"></td>
+                    <td th:text="${ventas.nombre}"></td>
+                    <td th:text="${ventas.apellido}"></td>
+                    <td th:text="${ventas.email}"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Encargados de Logística -->
+        <h2 class="text-info">Encargados de Logística</h2>
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="logistica : ${logisticas}">
+                    <td th:text="${logistica.id}"></td>
+                    <td th:text="${logistica.nombre}"></td>
+                    <td th:text="${logistica.apellido}"></td>
+                    <td th:text="${logistica.email}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
