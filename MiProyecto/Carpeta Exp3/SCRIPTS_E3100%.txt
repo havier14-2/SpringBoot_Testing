@@ -1,0 +1,125 @@
+--BASE DE DATOS PARA INVENTARIO
+
+USE basedatosfull;
+
+INSERT INTO inventario (nombre, descripcion, precio)
+VALUES ('Gabinete Gamer ATX', 'Gabinete con panel lateral de vidrio templado y ventilación RGB frontal', 59990);
+
+INSERT INTO inventario (nombre, descripcion, precio)
+VALUES ('Fuente de Poder 750W', 'Fuente certificada 80 Plus Bronze, ideal para setups con tarjeta gráfica dedicada', 68990);
+
+INSERT INTO inventario (nombre, descripcion, precio)
+VALUES ('Router WiFi 6 TP-Link', 'Router de doble banda con tecnología WiFi 6 y velocidad AX1800', 49990);
+
+INSERT INTO inventario (nombre, descripcion, precio)
+VALUES ('Tablet Android 10"', 'Tablet con pantalla Full HD, 4GB RAM y 64GB de almacenamiento', 89990);
+
+INSERT INTO inventario (nombre, descripcion, precio)
+VALUES ('Tarjeta Gráfica NVIDIA GTX 1660', 'GPU con 6GB GDDR5 ideal para gaming en 1080p y creación de contenido', 189990);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--BASE DE DATOS PARA PEDIDOS
+
+use basedatosfull;
+
+INSERT INTO pedidos (nombre, descripcion, precio)
+VALUES ('Kit de Iluminación LED RGB', 'Tiras LED RGB con control remoto y adhesivo 3M para setup gamer', 24990);
+
+INSERT INTO pedidos (nombre, descripcion, precio)
+VALUES ('Disco Duro SSD 1TB', 'Unidad de estado sólido con velocidad de lectura hasta 500MB/s', 74990);
+
+INSERT INTO pedidos (nombre, descripcion, precio)
+VALUES ('Auriculares Inalámbricos JBL', 'Auriculares con cancelación de ruido y batería de larga duración', 69990);
+
+INSERT INTO pedidos (nombre, descripcion, precio)
+VALUES ('Base Refrigerante para Notebook', 'Soporte con ventiladores silenciosos y altura ajustable', 19990);
+
+INSERT INTO pedidos (nombre, descripcion, precio)
+VALUES ('Micrófono Condensador USB', 'Micrófono profesional para streaming y grabaciones con brazo articulado', 58990);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--BASE DE DATOS PARA PAGOS
+
+use basedatosfull;
+
+INSERT INTO pagos (nombre, descripcion, precio)
+VALUES ('Teclado Mecánico RGB', 'Teclado retroiluminado con switches azules y reposamuñecas incluido', 67990);
+
+INSERT INTO pagos (nombre, descripcion, precio)
+VALUES ('Mouse Inalámbrico Logitech', 'Mouse ergonómico con conectividad Bluetooth y sensor óptico de alta precisión', 35990);
+
+INSERT INTO pagos (nombre, descripcion, precio)
+VALUES ('Monitor Curvo Samsung 27"', 'Monitor curvo Full HD de 27 pulgadas con tecnología Eye Saver y AMD FreeSync', 174990);
+
+INSERT INTO pagos (nombre, descripcion, precio)
+VALUES ('Silla Gamer Reclinable', 'Silla ergonómica con soporte lumbar ajustable y reposapiés extensible', 129990);
+
+INSERT INTO pagos (nombre, descripcion, precio)
+VALUES ('Webcam Full HD Logitech', 'Cámara web con resolución 1080p, micrófono dual y enfoque automático', 45990);
+
+
+
+--BASE DE DATOS PARA USUARIOS
+
+use basedatosfull;
+
+-- Tabla: clientes
+INSERT INTO cliente (id, nombre, apellido, email) VALUES
+(101, 'Carlos', 'Muñoz', 'carlos.munoz@example.com'),
+(102, 'Lucía', 'Pérez', 'lucia.perez@example.com'),
+(103, 'Javier', 'Rojas', 'javier.rojas@example.com'),
+(104, 'Fernanda', 'López', 'fernanda.lopez@example.com');
+
+-- Tabla: gerentes
+INSERT INTO gerente (id, nombre, apellido, email) VALUES
+(201, 'Paula', 'González', 'paula.gonzalez@example.com'),
+(202, 'Andrés', 'Salazar', 'andres.salazar@example.com'),
+(203, 'María', 'Contreras', 'maria.contreras@example.com'),
+(204, 'Rodrigo', 'Vega', 'rodrigo.vega@example.com');
+
+-- Tabla: administradores
+INSERT INTO administrador (id, nombre, apellido, email) VALUES
+(301, 'Elena', 'Navarro', 'elena.navarro@example.com'),
+(302, 'Tomás', 'Herrera', 'tomas.herrera@example.com'),
+(303, 'Camila', 'Castro', 'camila.castro@example.com'),
+(304, 'Francisco', 'Molina', 'francisco.molina@example.com');
+
+-- Tabla: encargados_ventas
+INSERT INTO encargado_ventas (id, nombre, apellido, email) VALUES
+(401, 'Natalia', 'Silva', 'natalia.silva@example.com'),
+(402, 'Diego', 'León', 'diego.leon@example.com'),
+(403, 'Valentina', 'Araya', 'valentina.araya@example.com'),
+(404, 'Matías', 'Fernández', 'matias.fernandez@example.com');
+
+-- Tabla: encargados_logistica
+INSERT INTO encargado_logistica (id, nombre, apellido, email) VALUES
+(501, 'Ignacio', 'Paredes', 'ignacio.paredes@example.com'),
+(502, 'Sofía', 'Carrasco', 'sofia.carrasco@example.com'),
+(503, 'Benjamín', 'Torres', 'benjamin.torres@example.com'),
+(504, 'Isidora', 'Fuentes', 'isidora.fuentes@example.com');
+
+
+
+--BASE DE DATOS PARA PRODUCTOS
+
+
+use basedatosfull;
+
+INSERT INTO producto (id, nombre, descripcion, precio) VALUES (1, 'Lámpara de escritorio', 'Lámpara LED con brazo flexible', 14990);
+INSERT INTO producto (id, nombre, descripcion, precio) VALUES (2, 'Mochila deportiva', 'Mochila resistente al agua de 20 litros', 29990);
+INSERT INTO producto (id, nombre, descripcion, precio) VALUES (3, 'Set de cubiertos', 'Juego de cubiertos de acero inoxidable, 24 piezas', 19990);
+INSERT INTO producto (id, nombre, descripcion, precio) VALUES (4, 'Auriculares inalámbricos', 'Auriculares Bluetooth con cancelación de ruido', 49990);
+INSERT INTO producto (id, nombre, descripcion, precio) VALUES (5, 'Taza térmica', 'Taza de acero inoxidable para mantener la temperatura', 9990);
+
+
+
+--BASE DE DATOS PARA SUCURSALES
+
+
+use basedatosfull;
+
+INSERT INTO sucursales (id, nombre, direccion) VALUES (1, 'Sucursal Santiago', 'Av. Providencia 1234, Santiago');
+INSERT INTO sucursales (id, nombre, direccion) VALUES (2, 'Sucursal Viña del Mar', 'Calle Valparaíso 567, Viña del Mar');
+INSERT INTO sucursales (id, nombre, direccion) VALUES (3, 'Sucursal Concepción', 'O''Higgins 890, Concepción');
