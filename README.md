@@ -1,8 +1,10 @@
-Integrantes: Javier Albornoz, Vicente Hormazabal, Diego neira.
+Se presenta un proyecto de Microservicios utilizando SpringBoot, en el cual se implementaron pruebas unitarias y de integracion.
+Se realizaron 3 etapas conformadas por: Toma de requisitos y Modelado, Desarrollo y finalmente Testing, esto esta documentado en los archivos subidos en Exp1, Exp2, Exp 3 respectivamente dento de la carpeta MiProyecto.
 
-EXPERIENCIA 1:
 
-Hola Profe, le adjuntare los links de los diagramas porque la aplicacion que utilizamos no permitia guardarlos:
+A continuacion se presentan los diagramas de la etapa de modelado: 
+
+UML:
 
 Diagrama Administrador: https://app.diagrams.net/#G1GLvC1tDz6Xb5K49j2EDjwxZytfpPOm8e#%7B%22pageId%22%3A%22kb6ZePDwfS2-X3zEc-At%22%7D
 
@@ -24,9 +26,9 @@ Diagrama Microservicios: https://app.diagrams.net/#G1-h0m6serXC1OTQd2snybM_QOp27
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-EXPERIENCIA 2:
+Aca se muestran los inicios del proyecto, en la etapa de desarrollo. El cual luego fue optimizado:
 
-Hola profe, en la carpeta MiProyecto se encuentran las 3 experiencias, en la Experiencia 2, el archivo que dice perfulandia es el microservicio USUARIOS, y los otros 2 tienen los nombres bien asignados y en el archivo scripts-sql estan los endpoints.
+Hola, en la carpeta MiProyecto se encuentran las 3 experiencias, en la Experiencia 2, el archivo que dice perfulandia es el microservicio USUARIOS, y los otros 2 tienen los nombres bien asignados y en el archivo scripts-sql estan los endpoints.
 
 README
 
@@ -75,8 +77,10 @@ README
 ////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////////
+En esta etapa el proyecto posee una buena base backend, se utiliza la arquitectura de Microservicios. Se entregan los paths de los nuevos microservicios implementados. 
+Y se implementó testing (Pruebas Unitarias y de integración).
 
-EXPERIENCIA 3: Hola profe, PATHS DE LOS 3 MICROSERVICIOS DE LA EXPERIENCIA 3:
+Hola, PATHS DE LOS 3 MICROSERVICIOS DE LA EXPERIENCIA 3:
 
 VISTAS HTML:
 
